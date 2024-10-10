@@ -15,8 +15,8 @@ holiday_stock_mapping = {
 }
 
 # Your Alpaca API credentials
-ALPACA_API_KEY = 'PKVFZ9WJPYUUITV3C0MW'
-ALPACA_SECRET_KEY = 'iNtmYcnhA9Q4TQgiqqCMEZEGEztDsnxly0YUJC4k'
+ALPACA_API_KEY = 'PK8POK7F9QMTGFYAT322'
+ALPACA_SECRET_KEY = 'VXDb4i5qsgjwl81BtBcGOl914rrflUa8FOc5Sv9U'
 ALPACA_BASE_URL = 'https://paper-api.alpaca.markets'
 
 # Create an Alpaca API instance
