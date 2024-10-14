@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests alpaca-trade-api
-          pip install alpaca-py dotenv
+          pip install alpaca-py python-dotenv
           
 
       - name: Run the stock buying script
