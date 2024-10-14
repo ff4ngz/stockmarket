@@ -1,6 +1,10 @@
 import requests
 import alpaca_trade_api as tradeapi
 from datetime import datetime
+import os 
+from dotenv import load_dotenv # Load environment variables from .env file
+load_dotenv()
+
 
 # Define the mapping of holidays to stocks (can be extended)
 holiday_stock_mapping = {
@@ -15,14 +19,14 @@ holiday_stock_mapping = {
 }
 
 # Your Alpaca API credentials
-ALPACA_API_KEY = 'PKLSAC0BSIJY9VIEPLGF'
-
-ALPACA_SECRET_KEY = 'Kdwmxj153OGX6UUM85OGeJR2yJ7a6XPhqmymU9gX'
-ALPACA_BASE_URL = 'https://paper-api.alpaca.markets'
+API_KEY_ID = os.getenv("APCA_API_KEY_ID")
+print(API_KEY_ID)
+API_SECRET_KEY = os.getenv("APCA_API_SECRET_KEY") # Your trading bot logic goes here
+API_BASE_URL = os.getenv("APCA_API_BASE_URL")
 
 # Create an Alpaca API instance
-api = tradeapi.REST(ALPACA_API_KEY, ALPACA_SECRET_KEY, base_url=ALPACA_BASE_URL)
-
+api = tradeapi.REST(API_KEY_ID, API_SECRET_KEY, base_url=API_BASE_URL)
+print("login success")
 # Function to check if today is a holiday
 def is_today_holiday():
     today = datetime.now().strftime('%Y-%m-%d')
