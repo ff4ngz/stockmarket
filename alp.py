@@ -21,7 +21,7 @@ holiday_stock_mapping = {
 # Your Alpaca API credentials
 API_KEY_ID = os.getenv("APCA_API_KEY_ID")
 print(API_KEY_ID)
-API_SECRET_KEY = os.getenv("APCA_API_SECRET_KEY") # Your trading bot logic goes here
+API_SECRET_KEY = os.getenv("ALPACA_SECRET_KEY") # Your trading bot logic goes here
 API_BASE_URL = os.getenv("APCA_API_BASE_URL")
 
 # Create an Alpaca API instance
